@@ -3,6 +3,7 @@
     outline-offset: -1px;
 }
 */
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
@@ -601,7 +602,21 @@ img {
   position: fixed;
   top: 0;
   background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
+.backdrop{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.backdrop.active{
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
 
 .modal {
   width: 408px;
@@ -615,11 +630,14 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon {
+.modal-close-btn {
   border-radius: 50%;
   border: 4px;
+  background-color: #e7e9fc; 
+  border: 1px solid rgba(0, 0, 0, 0.1);
   margin-left: auto;
   position: absolute;
   top: 24px;
@@ -632,23 +650,20 @@ img {
   display: flex;
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-icon:hover,
-.modal-close-icon:focus {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   background-color: #404bbf;
 }
 
-.modal-close-icon:hover .form-modal-icon {
-  fill: #f4f4fd;
+.modal-close-btn:hover .form-modal-icon {
+  fill: #ffffff
 }
 
-.modal-close-icon:focus .form-modal-icon {
-  fill: #f4f4fd;
-}
-
-.form-modal-icon {
+.modal-close-btn:focus .form-modal-icon {
+  fill: #ffffff
 }
 
 .modal-title {
@@ -710,6 +725,7 @@ img {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-filed{
