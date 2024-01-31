@@ -559,9 +559,12 @@ img {
   letter-spacing: 0.04em;
   margin-right: 24px;
   padding: 0 24px;
+  padding-left: 16px;
+  background-color: transparent;
 }
 
 .footer-form-btn {
+  min-width: 165px;
   border: none;
   cursor: pointer;
   display: flex;
@@ -569,7 +572,7 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -589,6 +592,7 @@ img {
 }
 
 .form-btn-icon {
+  margin-left: 16px;
 }
 
 .backdrop {
