@@ -711,7 +711,7 @@ img {
 }
 
 .contact-input:hover, .contact-input:focus {
-  border-color: #4D5AE5; 
+  border-color: #4D5AE5;
 }
 
 .comment-input {
@@ -759,12 +759,15 @@ img {
 
 .checkbox-span {
   display: inline-flex;
+  border: none;
   align-items: center;
   justify-content: center;
+  background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent; 
+  fill: #F4F4FD;
 }
 
 .checkbox-label {
