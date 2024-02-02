@@ -732,6 +732,10 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.comment-input:focus {
+  border-color: #4D5AE5;
+}
+
 .modal-icon {
   position: absolute;
   left: 16px;
@@ -741,7 +745,7 @@ img {
 }
 
 .modal-filed{
-  margin-bottom: 8px;
+  margin-bottom: 24px;
   
 }
 
@@ -753,6 +757,15 @@ img {
 
 }
 
+.checkbox-span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent; 
+}
 
 .checkbox-label {
   min-width: 338px;
