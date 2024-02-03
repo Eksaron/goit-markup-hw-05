@@ -705,8 +705,8 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-input:hover .modal-icon,
-.contact-input:focus .modal-icon {
+.contact-input:hover + .modal-icon,
+.contact-input:focus + .modal-icon {
   fill: #4D5AE5;
 }
 
@@ -745,7 +745,7 @@ img {
 }
 
 .modal-filed{
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   
 }
 
@@ -822,7 +822,7 @@ img {
   height: 56px;
   border: none;
   cursor: pointer;
-  display: none;
+  /* display: none; */
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
