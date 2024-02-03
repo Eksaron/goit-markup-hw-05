@@ -705,14 +705,18 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.contact-input:hover,
+.contact-input:focus,
+.comment-input:hover,
+.comment-input:focus {
+  border-color: #4D5AE5;
+}
+
 .contact-input:hover + .modal-icon,
 .contact-input:focus + .modal-icon {
   fill: #4D5AE5;
 }
 
-.contact-input:hover, .contact-input:focus {
-  border-color: #4D5AE5;
-}
 
 .comment-input {
   width: 100%;
@@ -732,9 +736,6 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment-input:focus {
-  border-color: #4D5AE5;
-}
 
 .modal-icon {
   position: absolute;
@@ -750,10 +751,10 @@ img {
 }
 
 .comment-block{
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 
-.checkbox-input{
+.user-privacy-policy{
 
 }
 
