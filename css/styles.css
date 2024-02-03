@@ -796,6 +796,12 @@ img {
   display: inline-flex;
 }
 
+input[type='checkbox']:checked + label > span {
+  background-color: #404bbf;
+  fill: #f4f4fd;
+  border: none;
+}
+
 .checkbox-label a {
   color: var(--IRIS, #4d5ae5);
   font-size: 12px;
