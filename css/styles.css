@@ -751,6 +751,10 @@ img {
 }
 
 .comment-block{
+  margin-bottom: 16px;
+}
+
+.checkbox-block{
   margin-bottom: 24px;
 }
 
