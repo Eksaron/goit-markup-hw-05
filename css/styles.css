@@ -822,6 +822,7 @@ img {
   height: 56px;
   border: none;
   cursor: pointer;
+  display: none;
   padding: 16px 32px;
   align-items: flex-start;
   gap: 10px;
@@ -833,11 +834,13 @@ img {
   margin-right: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.5; /* 150% */
-letter-spacing: 0.04em;
-text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
 }
 
 .form-button:hover,
