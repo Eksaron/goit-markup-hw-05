@@ -634,20 +634,17 @@ img {
 }
 
 .modal-close-btn {
-  border-radius: 50%;
-  border: 4px;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  margin-left: auto;
   position: absolute;
   top: 24px;
   right: 24px;
-  margin-left: auto;
   width: 24px;
   height: 24px;
-  justify-content: center;
-  align-items: center;
+  border-radius: 50%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
