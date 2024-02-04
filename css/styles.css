@@ -660,8 +660,8 @@ img {
   border: none;
 }
 
-.modal-close-btn:hover .form-modal-icon,
-.modal-close-btn:focus .form-modal-icon {
+.modal-close-btn:hover,
+.modal-close-btn:focus {
   fill: #ffffff;
 }
 
